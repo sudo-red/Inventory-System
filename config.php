@@ -1,11 +1,11 @@
 <?php
 
-$conn = mysqli_connect('localhost','root','','user_db');
+$conn = mysqli_connect('','','','');
 
 
-$host_name = "localhost";
-$database = "user_db"; // Change your database nae
-$username = "root";          // Your database user id 
+$host_name = "";
+$database = ""; // Change your database nae
+$username = "";          // Your database user id 
 $password = "";          // Your password
 try {
 $dbo = new PDO('mysql:host='.$host_name.';dbname='.$database, $username, $password);
