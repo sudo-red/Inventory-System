@@ -1,0 +1,372 @@
+*{
+	box-sizing: border-box;
+	font-family: Verdana;
+}
+
+body{
+	margin: 0;
+}
+
+.header{
+	width: 100%;
+	height: 70px;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	box-shadow: 5px 5px 10px 0px #d4d4d4;
+	background-color: #FD914C;
+	padding-block: 5px;
+	overflow: hidden;
+}
+
+.logo{
+	height: 60px;
+	margin-left: 5px;
+	position: absolute;
+}
+
+.Fae-Fae{
+	top: 8px;
+	position: relative;
+	margin-left: 85px;
+	color: white;
+	overflow: hidden;
+}
+
+.user{
+	top: 5px;
+	float: right;
+	height: 50px;
+	position: relative;
+	margin-right: 20px;
+}
+
+.Username{
+	position: relative;
+	top: 20px;
+	float: right;
+	margin-right: 20px;
+}
+
+.SideBarBtn{
+	top: 10px;
+	margin-inline: 15px;
+	font-size: 25px;
+	cursor: pointer;
+	background-color: #FD914C;
+	color: white;
+	border: none;
+	text-align: center;
+	position: relative;
+}
+
+/*SIDE BAR*/
+.SideBar{
+		height: 100%;
+  	width: 0;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: #FEFEBE;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+}
+
+.SideBar a{
+  	text-decoration: none;
+  	text-align: center;
+  	font-size: 15px;
+  	background-color: #FD914C;
+  	margin-left: 20px;
+  	margin-right: 10px;
+  	border-radius: 10px;
+  	padding-block: 10px;
+  	color: white;
+  	display: block;
+  	transition: 0.3s;
+  	width: 75%;
+}
+
+.SideBar a:hover {
+	opacity: 50%;
+}
+
+.SideBar .CloseSideBtn {
+	position: absolute;
+  	top: 20px;
+  	right: 25px;
+  	font-size: 25px;
+  	margin-left: 50px;
+  	background-color: #FEFEBE;
+  	border: none;
+  	color: black;
+  	cursor: pointer;
+}
+
+.SideBar #SelectBranch{
+	display: inline;
+	float: left;
+	margin-right: 0px;
+}
+
+.SideBar input[type=submit]{
+	display: inline;
+	width: 30%;
+	background-color: #FD914C;
+	padding-block: 10px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	margin-block: 0px;
+	margin-left: -25px;
+}
+
+
+/* DROP DOWN */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-btn {
+	background-color: #FD914C;
+	font-size: auto;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	width: 70%;
+	margin-inline: 0px;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	left: 20px;					
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content option {
+	font-size: 80%;
+  	color: black;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+}
+
+.dropdown-content option:hover {
+	opacity: 50%;
+	cursor: pointer;
+}
+
+.dropdown-content a {
+	font-size: 80%;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	opacity: 50%;
+	cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	float: right;
+}
+
+.dropdown:hover .dropdown-btn {
+	opacity: 50%;
+}
+
+
+/* TITLE DATE */
+.container-title{
+	background-color: #FEFEBE;
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	background-color: #FEFEBE;
+	padding-block: 1px;
+	margin: 0px;
+	width: auto;
+}
+
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+	margin-block: 0px;
+}
+
+/* AVAILABLE COLUMN */
+.available-content{
+	padding-block: 5px;
+	float: left;
+	width: 50%;
+	padding-block: 5px;
+}
+
+.available-container{
+	padding-block: 2px;
+	text-align: center;
+	margin-inline: 5px;
+	background-color: #FFBE65;
+	border: none;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+#available-table{
+    margin-inline: 10px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 75%;
+    font-size: 70%;
+}
+
+#available-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-inline: 12px;
+    border-bottom: 8px solid #FFBE65;
+    text-align: center;
+    background-color: #FFBE65;
+}
+
+#available-table td{
+    padding: 8px;
+    text-align: center;
+    border-bottom: 8px solid #FFBE65;
+    background-color: white;
+}
+
+#available-table td:hover {
+    background-color: #dddd;
+}
+
+
+/* NEEDED COLUMN */
+.needed-content{
+	padding-block: 5px;
+	float: right;
+	width: 50%;
+	padding-block: 5px;
+}
+
+.needed-container{
+	padding-block: 2px;
+	text-align: center;
+	margin-inline: 5px;
+	background-color: #FAC898;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+#needed-table{
+    margin-inline: 10px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 75%;
+    font-size: 70%;
+}
+#needed-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-inline: 12px;
+    border-bottom: 8px solid #FAC898;
+    text-align: center;
+    background-color: #FAC898;
+}
+#needed-table td{
+    padding: 8px;
+    text-align: center;
+    border-bottom: 8px solid #FAC898;
+    background-color: white;
+}
+#needed-table td:hover {
+    background-color: #dddd;
+}
+
+
+
+/* SUMMARY CONTAINER */
+.summary-content{
+	margin-inline: auto;	
+	text-align: center;
+	width: 50%;
+	padding-block: 5px;
+}
+
+.summary-container{
+	padding-block: 2px;
+	text-align: center;
+	background-color: #F1F4F4;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+#summary-table{
+    margin-inline: auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    width: 95%;
+    font-size: 80%;
+}
+#summary-table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-inline: 12px;
+    border-bottom: 8px solid #ECECEC;
+    text-align: center;
+    background-color: #ECECEC;
+}
+#summary-table td{
+    padding: 8px;
+    text-align: center;
+    border-bottom: 8px solid #ECECEC;
+    background-color: white;
+}
+#summary-table td:hover {
+    background-color: #dddd;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 15px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f0cdb9; 
+}
+
+/*SCREEN SIZE CUSTOMIZATION*/
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 900px){
+	.SideBar input [type=submit]{
+		margin-block: 10px;
+		display: block;
+		margin-left: 20px;
+	}
+	.available-content, .needed-content, .summary-content{
+		width: 100%;
+	}
+}
+
